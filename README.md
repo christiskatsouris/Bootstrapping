@@ -4,13 +4,18 @@ Learning Objectives: In this teaching page we present some key applications of t
 
 # I. Bootstrap for Linear Time Series Regression Models
 
+## Example 1
 
 
 
+## References
 
+DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
 
 
 # II. Bootstrap for Non-Linear Time Series Models
+
+## Example 2
 
 Simulate a data generating process that corresponds to a stationary GARCH model using the code below:
 
