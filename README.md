@@ -18,10 +18,12 @@ fgspec <- garchSpec( model=list(alpha=alpha, omega=omega, beta=beta) )
 fgsim  <- garchSim( spec=fgspec, extended=TRUE, n=100 )
 series <- fgsim
 
-garch.values<-series$garch
-sigma.values<-series$sigma
-eps.values<-series$eps
+# Series extraction
+garch.values <- series$garch
+sigma.values <- series$sigma
+eps.values   <- series$eps
 
+# Plotting sequences
 ts.plot(garch.values)
 ts.plot(sigma.values)
 ts.plot(eps.values)
