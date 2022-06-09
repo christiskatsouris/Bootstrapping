@@ -2,7 +2,15 @@
 
 Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling methodology for statistical inference purposes in time series regression models. 
 
-## Bootstrap for Non-Linear Models
+## Bootstrap for Linear Time Series Regression Models
+
+
+
+
+
+
+
+## Bootstrap for Non-Linear Time Series Models
 
 Simulate a data generating process that corresponds to a stationary GARCH model using the code below:
 
