@@ -73,7 +73,7 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
       x.boot[j] <- sqrt(s.boot[j])*e.tilde[j]
     }
     
-    x.boot <- x.boot[(n.s+1):(n.s+n)]
+    x.boot    <- x.boot[(n.s+1):(n.s+n)]
     t.stat[i] <- T_hat(x.boot)
     
     #T_hat is the function for the test statistic (under the null hypothesis there is no volatility shift)
