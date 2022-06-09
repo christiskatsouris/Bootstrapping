@@ -8,6 +8,9 @@ Simulate a data generating process that corresponds to a stationary GARCH model 
 
 ```R
 
+install.packages("fGarch")
+library("fGarch")
+
 # Garch parameters
 alpha <- 0.07
 omega <- 0.5
