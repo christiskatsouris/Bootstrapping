@@ -105,6 +105,6 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 # Further Reading
 
-Efron, B., & Tibshirani, R. J. (1994). An introduction to the bootstrap. CRC press.
+Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
 
 Godfrey, L. (2009). Bootstrap tests for regression models. Springer.
