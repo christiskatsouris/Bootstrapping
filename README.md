@@ -8,9 +8,15 @@ Learning Objectives: In this teaching page we present some key applications of t
 
 
 
+
+## Assignment 1  
+
+
 ## References
 
 DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
+
+Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
 
 
 # II. Bootstrap for Non-Linear Time Series Models
@@ -52,7 +58,7 @@ ts.plot(innov)
 
 ```
 
-## Exercise 1  
+## Assignment 2  
 
 Using the bootstrap procedure below, implemented in R, consider an appropriate test statistic Tn of your choice for which you can employ as a structural-break detector when testing for the presence of parameter instability in a Garch (1,1) model.  Simulate B = 1,000 DGP based on sample sizes n = {250, 500} and obtain separately the empirical size (under the null hypothesis of no parameter instability) and the power function (under the alternative hypothesis) of your test statistic. Report the empirical size, empirical power and provide a detailed description of how you estimate the critical values of the test statistic. 
 
