@@ -84,3 +84,16 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 }#End of function
 
 ```
+
+### References
+
+- Berkes, István, et al. "Sequential change-point detection in GARCH (p, q) models." Econometric theory 20.6 (2004): 1140-1167.
+
+- Horváth, Lajos, Zhenya Liu, and Shanglin Lu. "Sequential monitoring of changes in dynamic linear models, applied to the US housing market." Econometric Theory (2021): 1-64.
+
+
+# Further Reading
+
+Efron, B., & Tibshirani, R. J. (1994). An introduction to the bootstrap. CRC press.
+
+Godfrey, L. (2009). Bootstrap tests for regression models. Springer.
