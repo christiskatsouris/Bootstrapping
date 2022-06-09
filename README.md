@@ -2,7 +2,7 @@
 
 Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling methodology for statistical inference purposes in time series regression models. 
 
-## Bootstrap for Linear Time Series Regression Models
+# I. Bootstrap for Linear Time Series Regression Models
 
 
 
@@ -10,7 +10,7 @@ Learning Objectives: In this teaching page we present some key applications of t
 
 
 
-## Bootstrap for Non-Linear Time Series Models
+# II. Bootstrap for Non-Linear Time Series Models
 
 Simulate a data generating process that corresponds to a stationary GARCH model using the code below:
 
@@ -47,7 +47,7 @@ ts.plot(innov)
 
 ```
 
-### Exercise 1  
+## Exercise 1  
 
 Using the bootstrap procedure below, implemented in R, consider an appropriate test statistic Tn of your choice for which you can employ as a structural-break detector when testing for the presence of parameter instability in a Garch (1,1) model.  Simulate B = 1,000 DGP based on sample sizes n = {250, 500} and obtain separately the empirical size (under the null hypothesis of no parameter instability) and the power function (under the alternative hypothesis) of your test statistic. Report the empirical size, empirical power and provide a detailed description of how you estimate the critical values of the test statistic. 
 
@@ -96,7 +96,7 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 ```
 
-### References
+## References
 
 - Berkes, István, et al. "Sequential change-point detection in GARCH (p, q) models." Econometric theory 20.6 (2004): 1140-1167.
 
