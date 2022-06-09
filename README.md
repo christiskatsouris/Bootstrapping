@@ -1,6 +1,6 @@
 # Bootstrap Applications
 
-Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling methodology for statistical inference purposes in time series regression models. 
+Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling methodology for statistical inference purposes in time series regression models. In particular, the use of resampling in statistical inference goes back to Tukey (1958) and Efron (1979) while Freedman (1981) extended this idea to regression models. Therefore, it is crucial to understand the main idea of this useful tool for obtaining robust estimates of model parameters and test statistics. There are of course modelling environments especially under certain econometric conditions that a standard Bootstrap approach is not suitable, but this is beyond the scope of this teaching page.
 
 # I. Bootstrap for Linear Time Series Regression Models
 
