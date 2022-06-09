@@ -42,7 +42,9 @@ Using the bootstrap procedure below, implemented in R, consider an appropriate t
 
 ```R
 
-method2 <- function(innov=innov,B=B,n=n, n.s=n.s, est.par=est.par)
+set.seed(1234)
+
+bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = est.par )
 {#begin of function
   
   t.stat <- rep(NA, times = B)
@@ -74,7 +76,7 @@ method2 <- function(innov=innov,B=B,n=n, n.s=n.s, est.par=est.par)
     x.boot <- x.boot[(n.s+1):(n.s+n)]
     t.stat[i] <- T_hat(x.boot)
     
-    #T_hat is the function for the test statistic for no volatility shift
+    #T_hat is the function for the test statistic (under the null hypothesis there is no volatility shift)
   }#end of bootstrap step
   
   return(t.stat)
