@@ -9,9 +9,21 @@ The main idea behind bootstrapping is to repeatedly draw samples with replacemen
 
 ## Example 1
 
+```R
 
+# install the package Bootstrap
+install.package("bootstrap")
+library(bootstrap)
 
+# to generate B=1000 bootstrap samples using the boostrap function we use
 
+# number of boostrap
+nboot = 1000
+
+# call the bootstrap function
+boot.mean = bootstrap( 1: dim(dat)[1], nboot, mean.diff, dat )
+
+```
 
 ## Assignment 1  
 
@@ -23,7 +35,7 @@ DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical
 Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
 
 
-# II. Bootstrap for Conditional Heteroscedastic Time Series Regression Models
+# II. Bootstrap for Conditional Heteroscedastic Time Series Regressions
 
 ## Example 2
 
