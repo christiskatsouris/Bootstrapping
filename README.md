@@ -30,10 +30,9 @@ boot.mean = bootstrap( 1: dim(dat)[1], nboot, mean.diff, dat )
 
 ## References
 
-DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
-
-Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
-
+- DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
+- Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
+- MacKinnon, J. G. (2002). Bootstrap inference in econometrics. Canadian Journal of Economics/Revue canadienne d'économique, 35(4), 615-645.
 
 # II. Bootstrap for Conditional Heteroscedastic Time Series Regressions
 
