@@ -25,6 +25,36 @@ boot.mean = bootstrap( 1: dim(dat)[1], nboot, mean.diff, dat )
 
 ```
 
+## Example 2
+
+```R
+
+# install the package coin
+install.packages("coin")
+library(coin)
+
+tstat <- function(data)
+{
+  x    <- data[1:nEng, 2]
+  y    <- data[(nEng+1):nrow(data), 2]
+  tobj <- t.test(x, y)
+  t    <- tobj$statistic 
+  return(t)
+}
+
+bootstat <- function(data, indices) 
+{
+  d  <- data[indices,] # allows boot to select sample
+  t  <- tstat(d)
+  return(t)
+}
+
+b   <- boot(data=mice2, statistic=bootstat, R=nBoot)
+p   <- length(which(b$t > b$t0)) / nBoot
+
+```
+
+
 ## Assignment 1  
 
 
