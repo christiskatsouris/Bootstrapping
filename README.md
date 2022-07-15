@@ -129,8 +129,21 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 - Horváth, Lajos, Zhenya Liu, and Shanglin Lu. "Sequential monitoring of changes in dynamic linear models, applied to the US housing market." Econometric Theory (2021): 1-64.
 
 
-# Further Reading
+# Reading List
 
 [1] Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
 
 [2] Godfrey, L. (2009). Bootstrap tests for regression models. Springer.
+
+
+# Disclaimer
+
+The author (Christis G. Katsouris) declares no conflicts of interest.
+
+The proposed Course Syllabus is currently under development and has not been officially undergone quality checks. All rights reserved.
+
+Any errors or omissions are the responsibility of the author.
+
+# How to Cite a Website
+
+See: https://www.mendeley.com/guides/web-citation-guide/
