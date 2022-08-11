@@ -167,7 +167,7 @@ We begin by considering as an example, the simulation procedure to obtain critic
 
 
 
-## [B.] Nonlinear Stochastic Processes
+## [B.] Nonlinear Stochastic Processes (Advanced Topics)
 
 
 Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic process given by the following expression 
