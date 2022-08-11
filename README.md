@@ -161,7 +161,7 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 # III. Stochastic Processes Simulation Examples
 
-Consider the Cox-Ingersoll-Ross (CIR) process  which is a stationary and ergodic process given by the following expression 
+Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic process given by the following expression 
 
 
 
