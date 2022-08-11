@@ -161,6 +161,15 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 # III. Stochastic Processes Simulation Examples
 
+[A.] Classical Brownian Bridge limiting processes
+
+
+
+
+
+[B.] Nonlinear Stochastic Processes
+
+
 Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic process given by the following expression 
 
 
