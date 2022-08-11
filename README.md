@@ -159,6 +159,22 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 - Horváth, Lajos, Zhenya Liu, and Shanglin Lu. "Sequential monitoring of changes in dynamic linear models, applied to the US housing market." Econometric Theory (2021): 1-64.
 
 
+# III. Stochastic Processes Simulation Examples
+
+Consider the Cox-Ingersoll-Ross (CIR) process  which is a stationary and ergodic process given by the following expression 
+
+
+
+```R
+
+# Cox-Ingersoll-Ross (CIR) process 
+
+
+
+```
+
+
+
 # Reading List
 
 [1] Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
