@@ -203,3 +203,7 @@ The author (Christis G. Katsouris) declares no conflicts of interest.
 The proposed Course Syllabus is currently under development and has not been officially undergone quality checks. All rights reserved.
 
 Any errors or omissions are the responsibility of the author.
+
+# Acknowledgments
+
+The author greatfully acknowledges financial support from Graduate Teaching Assistantships at the School of Economic, Social and Political Sciences of the University of Southampton as well as funding from Research Grants of various interdisciplinary Centers of research excellence based at the University of Cyprus (UCY) as well as at University College London (UCL). Furthermore, the author gratefully acknowledges financial support from the Vice-Chancellor's PhD Scholarship of the University of Southampton, for the duration of the academic years 2018 to 2021.
