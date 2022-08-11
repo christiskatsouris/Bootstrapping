@@ -186,6 +186,7 @@ Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic p
 ## References
 
 - Cox, J. C., Ingersoll Jr, J. E., & Ross, S. A. (1985). An intertemporal general equilibrium model of asset prices. Econometrica: Journal of the Econometric Society, 363-384.
+- Wang, J. (1993). A model of intertemporal asset prices under asymmetric information. The Review of Economic Studies, 60(2), 249-282.
 
 # Reading List
 
