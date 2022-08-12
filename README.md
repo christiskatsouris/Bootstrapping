@@ -165,7 +165,7 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 - Horváth, Lajos, Zhenya Liu, and Shanglin Lu. "Sequential monitoring of changes in dynamic linear models, applied to the US housing market." Econometric Theory (2021): 1-64.
 
 - Paparoditis, Efstathios, and Dimitris N. Politis. "Resampling and subsampling for financial time series." Handbook of financial time series. Springer, Berlin, Heidelberg, 2009. 983-999.
-- 
+ 
 # III. Stochastic Processes Simulation Examples
 
 ## [A.] Classical Brownian Bridge limiting processes
