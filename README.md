@@ -62,6 +62,7 @@ p   <- length(which(b$t > b$t0)) / nBoot
 
 - DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
 - Efron, B. (1979). Computers and the theory of statistics: thinking the unthinkable. SIAM review, 21(4), 460-480.
+- Freedman, D. A. (1981). Bootstrapping regression models. The Annals of Statistics, 9(6), 1218-1228.
 - Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
 - MacKinnon, J. G. (2002). Bootstrap inference in econometrics. Canadian Journal of Economics/Revue canadienne d'économique, 35(4), 615-645.
 
