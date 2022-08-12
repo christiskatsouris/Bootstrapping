@@ -207,3 +207,7 @@ Any errors or omissions are the responsibility of the author.
 # Acknowledgments
 
 The author greatfully acknowledges financial support from Graduate Teaching Assistantships at the School of Economic, Social and Political Sciences of the University of Southampton as well as funding from Research Grants of various interdisciplinary Centers of research excellence based at the University of Cyprus (UCY) as well as at University College London (UCL). Furthermore, the author gratefully acknowledges financial support from the Vice-Chancellor's PhD Scholarship of the University of Southampton, for the duration of the academic years 2018 to 2021.
+
+# Historical Background
+
+$\textbf{David Freedman}$ (5 March 1938 – 17 October 2008) was Professor of Statistics at the University of California, Berkeley. He was a distinguished mathematical statistician whose wide-ranging research included the analysis of martingale inequalities, Markov processes, de Finetti's theorem, consistency of Bayes estimators, sampling, the bootstrap, and procedures for testing and evaluating models. He published extensively on methods for causal inference and the behavior of standard statistical models under non-standard conditions – for example, how regression models behave when fitted to data from randomized experiments. Freedman also wrote widely on the application—and misapplication—of statistics in the social sciences, including epidemiology, public policy, and law (Source: Wikipedia).
