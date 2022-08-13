@@ -156,12 +156,12 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 ## References
 
+- Horváth, L., Liu, Z., & Lu, S. (2022). Sequential monitoring of changes in dynamic linear models, applied to the US housing market. Econometric Theory, 38(2), 209-272. 
 - Berkes, I., Gombay, E., Horváth, L., & Kokoszka, P. (2004). Sequential change-point detection in GARCH (p, q) models. Econometric theory, 20(6), 1140-1167.
 - Corradi, V., & Iglesias, E. M. (2008). Bootstrap refinements for QML estimators of the GARCH (1, 1) parameters. Journal of Econometrics, 144(2), 500-510.
 - Paparoditis, E., & Politis, D. N. (2009). Resampling and subsampling for financial time series. In Handbook of financial time series (pp. 983-999). Springer, Berlin, Heidelberg.
-- Horváth, L., Liu, Z., & Lu, S. (2022). Sequential monitoring of changes in dynamic linear models, applied to the US housing market. Econometric Theory, 38(2), 209-272. 
- 
- 
+
+
 # III. Stochastic Processes Simulation Examples
 
 ## [A.] Classical Brownian Bridge limiting processes
@@ -190,8 +190,11 @@ Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic p
 
 - Cox, J. C., Ingersoll Jr, J. E., & Ross, S. A. (1985). An intertemporal general equilibrium model of asset prices. Econometrica: Journal of the Econometric Society, 363-384.
 - Cox, J. C., Ingersoll Jr, J. E., & Ross, S. A. (1985). A theory of the term structure of interest rates. Econometrica, 53(2), 385-407.
+- Richard, S. F. (1978). An arbitrage model of the term structure of interest rates. Journal of Financial Economics, 6(1), 33-57.
 - Wang, J. (1993). A model of intertemporal asset prices under asymmetric information. The Review of Economic Studies, 60(2), 249-282.
 
+
+ 
 # Reading List
 
 $\textbf{[1]}$ Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
