@@ -61,13 +61,9 @@ p   <- length(which(b$t > b$t0)) / nBoot
 ## References
 
 - DiCiccio, T. J., & Efron, B. (1996). Bootstrap confidence intervals. Statistical science, 11(3), 189-228.
-
 - Efron, B. (1979). Computers and the theory of statistics: thinking the unthinkable. SIAM review, 21(4), 460-480.
-
 - Freedman, D. A. (1981). Bootstrapping regression models. The Annals of Statistics, 9(6), 1218-1228.
-
 - Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
-
 - MacKinnon, J. G. (2002). Bootstrap inference in econometrics. Canadian Journal of Economics/Revue canadienne d'économique, 35(4), 615-645.
 
 # II. Bootstrap for Conditional Heteroscedastic Time Series Regressions
@@ -193,7 +189,6 @@ Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic p
 ## References
 
 - Cox, J. C., Ingersoll Jr, J. E., & Ross, S. A. (1985). An intertemporal general equilibrium model of asset prices. Econometrica: Journal of the Econometric Society, 363-384.
-
 - Wang, J. (1993). A model of intertemporal asset prices under asymmetric information. The Review of Economic Studies, 60(2), 249-282.
 
 # Reading List
