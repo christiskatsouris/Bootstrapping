@@ -161,10 +161,10 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 ## References
 
 - Berkes, I., Gombay, E., Horváth, L., & Kokoszka, P. (2004). Sequential change-point detection in GARCH (p, q) models. Econometric theory, 20(6), 1140-1167.
-
-- Horváth, L., Liu, Z., & Lu, S. (2022). Sequential monitoring of changes in dynamic linear models, applied to the US housing market. Econometric Theory, 38(2), 209-272.
-
+- Corradi, V., & Iglesias, E. M. (2008). Bootstrap refinements for QML estimators of the GARCH (1, 1) parameters. Journal of Econometrics, 144(2), 500-510.
 - Paparoditis, E., & Politis, D. N. (2009). Resampling and subsampling for financial time series. In Handbook of financial time series (pp. 983-999). Springer, Berlin, Heidelberg.
+- Horváth, L., Liu, Z., & Lu, S. (2022). Sequential monitoring of changes in dynamic linear models, applied to the US housing market. Econometric Theory, 38(2), 209-272. 
+ 
  
 # III. Stochastic Processes Simulation Examples
 
