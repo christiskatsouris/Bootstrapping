@@ -168,7 +168,17 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 
 We begin by considering as an example, the simulation procedure to obtain critical values from a normalized Brownian Bridge which consists of functionals of Brownian motions. 
 
+<p align="center">
+  
+<img src="https://github.com/christiskatsouris/Bootstrapping/blob/main/data/BM1.jpg" width="750"/>
 
+</p>  
+
+<p align="center">
+  
+<img src="https://github.com/christiskatsouris/Bootstrapping/blob/main/data/BM2.jpg" width="750"/>
+
+</p>  
 
 ## [B.] Nonlinear Stochastic Processes (Advanced Topics)
 
