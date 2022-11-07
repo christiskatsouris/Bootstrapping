@@ -89,6 +89,31 @@ lines(density(bootvals,kernel="gaussian"))
 
 ```
 
+## Example 4 (Regression-based Bootstrap Application)
+
+Consider the following regression-based bootstrap approach for resampling from the conditional distribution.
+
+```R
+
+install.packages("bootstrap")
+library(bootstrap)
+
+theta <- function(z, n1)
+{
+  answer <- mean( z[1:n1]) - mean( z[(n1+1):length(z)] )
+  return( answer )
+}
+
+treated     <- c(94,197,16,38,99,141,23)
+non.treated <- c(52,104,146,10,51,30,40,27,46)
+
+bootvals <- bootstrap2(treated, non.treated, 1000, theta, n1 = 7)
+hist(bootvals)
+
+```
+
+
+
 ## Assignment 1  
 
 
