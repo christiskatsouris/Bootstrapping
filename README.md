@@ -1,6 +1,6 @@
 # Applications of Bootstrap Method
 
-Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling method for statistical inference purposes in time series regression models. In particular, the use of resampling in statistical inference goes back to Tukey (1958) and Efron (1979) while Freedman (1981) extended this idea to regression models. Therefore, it is crucial to understand the main idea of this useful tool for obtaining robust estimates of model parameters and test statistics. There are of course modelling environments especially under certain econometric conditions that a standard Bootstrap approach is not suitable, but this is beyond the scope of this teaching page.
+Learning Objectives: In this teaching page we present some key applications of the bootstrap resampling method for statistical inference purposes in time series regression models. In particular, the use of resampling in statistical inference goes back to Tukey (1958) and Efron (1979) while Freedman (1981) extended this idea to regression models. Therefore, it is crucial to understand the main idea of this useful tool for obtaining robust estimates of model parameters and test statistics. There are of course modelling environments especially under certain econometric conditions that a standard Bootstrap approach is not suitable, but this is beyond the scope of this teaching page. A related introductory book chapter on Bootstrap and related methods, can be found 
 
 # I. Bootstrap for Linear Time Series Regression Models
 
@@ -54,6 +54,21 @@ p   <- length(which(b$t > b$t0)) / nBoot
 
 ```
 
+## Example 3
+
+```R
+
+# Another simple bootstrapping example in R
+# my.bootstrap function below implements bootstrapping with replacement
+
+my.bootstrap <- function(x, nboot, theta, ...)
+{
+  data   <- matrix(sample(x, size = length(x) * nboot, replace = T), nrow = nboot)
+  answer <- apply(data, 1, theta, ...)
+  return( answer )
+}
+
+```
 
 ## Assignment 1  
 
