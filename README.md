@@ -114,7 +114,7 @@ hist(bootvals)
 
 ## Remarks:
 
-1. Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic panel data models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable).   
+Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic panel data models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable). Related reference is the study of Hansen, B. E. (1999).   
 
 
 
@@ -128,6 +128,7 @@ hist(bootvals)
 - Freedman, D. A. (1981). Bootstrapping regression models. The Annals of Statistics, 9(6), 1218-1228.
 - Politis, D. N., & Romano, J. P. (1994). The stationary bootstrap. Journal of the American Statistical association, 89(428), 1303-1313.
 - MacKinnon, J. G. (2002). Bootstrap inference in econometrics. Canadian Journal of Economics/Revue canadienne d'économique, 35(4), 615-645.
+- Hansen, B. E. (1999). Threshold effects in non-dynamic panels: Estimation, testing, and inference. Journal of econometrics, 93(2), 345-368.
 
 # II. Bootstrap for Conditional Heteroscedastic Time Series Regressions
 
