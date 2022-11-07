@@ -73,10 +73,10 @@ data(faithful)
 
 # Extract the data from R
 observed <- as.matrix( faithful$waiting )
+hist(observed,prob=T,breaks=15) 
 
-
-hist(observed,prob=T,breaks=15) # Look at it
-bootvals <- my.bootstrap( observed, 1000, mean ) # 1000 bootstrap replicates of the mean
+# Obtain 1000 bootstrap replicates of the sample mean
+bootvals <- my.bootstrap( observed, 1000, mean ) 
 
 # Histogram of the bootstrap replicates
 hist(bootvals,prob=T) 
