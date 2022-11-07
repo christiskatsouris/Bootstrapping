@@ -116,6 +116,12 @@ hist(bootvals)
 
 Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic or non-dynamic panel data regression models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable). A framework for estimation and testing in dynamic panel models with nonlinearities is proposed by Hansen, B. E. (1999).   
 
+## Assignment 1  
+
+Using the estimation and testing procedure proposed in the paper of Hansen, B. E. (1999) implement your own R code procedure with a suitable bootstrap reampling method for obtaining bootstrap model coefficient estimates, bootstrap estimation of the nuisance threshold variable as well as correspondoing confidence intervals for the Regime-Specific Threshold Regression model. Your estimations can be based on the 'invest' dataset (which includes the variables i,q,c,d) or a different suitable dataset of your choice which based on a related economic theory it can support the hypothesis of the presence of threshold effects.      
+
+In particular, you can use the following part of the code for the estimation step of the model specification. Your assignment should include the functions for the bootstrap procedure, a detailed description of the econometric model and main intuition as well as indicative output from the simulation study such as graphical representation of the bootstrap distribution of the threshold variable as well as computational aspects such as executation time and the computational complexity based on the procedure proposed in the paper of Hansen, B. E. (1999).
+
 ```R
 
 # Threshold Regression Model Estimation Step for Non-Dynamic Panel Data (see,  Hansen, B. E. (1999))
@@ -157,10 +163,6 @@ thr_sse <- function(y,q,r)
 # Code Reference: Hansen, B. E. (1999). "Threshold effects in non-dynamic panels: Estimation, testing, and inference".
 
 ```
-
-## Assignment 1  
-
-Using the estimation and testing procedure proposed in the paper of Hansen, B. E. (1999) implement your own R code procedure with a suitable bootstrap reampling method for obtaining bootstrap model coefficient estimates, bootstrap estimation of the nuisance threshold variable as well as correspondoing confidence intervals for the Regime-Specific Threshold Regression model. Your estimations can be based on the 'invest' dataset (which includes the variables i,q,c,d) or a different suitable dataset of your choice which based on a related economic theory it can support the hypothesis of the presence of threshold effects.      
 
 ## References
 
