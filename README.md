@@ -160,6 +160,7 @@ thr_sse <- function(y,q,r)
 
 ## Assignment 1  
 
+Using the estimation and testing procedure proposed in the paper of Hansen, B. E. (1999) implement your own R code procedure with a suitable bootstrap reampling method for obtaining bootstrap model coefficient estimates, bootstrap estimation of the nuisance threshold variable as well as correspondoing confidence intervals for the Regime-Specific Threshold Regression model. Your estimations can be based on the 'invest' dataset (which includes the variables i,q,c,d) or a different suitable dataset of your choice which based on a related economic theory it can support the hypothesis of the presence of threshold effects.      
 
 ## References
 
