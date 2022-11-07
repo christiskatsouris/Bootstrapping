@@ -2,7 +2,7 @@
 
 In this teaching page we present some key applications of the bootstrap resampling method for statistical inference purposes in time series regression models. In particular, the use of resampling in statistical inference goes back to Tukey (1958) and Efron (1979) while Freedman (1981) extended this idea to regression models. Therefore, it is crucial to understand the main idea of this useful tool for obtaining robust estimates of model parameters and test statistics. There are of course modelling environments especially under certain econometric conditions that a standard Bootstrap approach is not suitable, but this is beyond the scope of this teaching page. A related introductory book chapter on Bootstrap and related methods, can be found in Chapter 21 of Davidson, R. and MacKinnon, J. G. (1993).
 
-# I. Bootstrap for Linear Time Series Regression Models
+# [A]. Bootstrap for Linear Time Series Regression Models
 
 The main idea behind bootstrapping is to repeatedly draw samples with replacement from the data, compute the statistic of interest and generate the sampling distribution of the statistic. Furthermore, bootstrapping is easily programmed both in R and Matlab. In particular, the build-in function 'bootstrap' in R can be employed for constructing bootstrapped test statistics.
 
@@ -171,7 +171,7 @@ Using the estimation and testing procedure proposed in the paper of Hansen, B. E
 - MacKinnon, J. G. (2002). Bootstrap inference in econometrics. Canadian Journal of Economics/Revue canadienne d'économique, 35(4), 615-645.
 - Hansen, B. E. (1999). Threshold effects in non-dynamic panels: Estimation, testing, and inference. Journal of econometrics, 93(2), 345-368.
 
-# II. Bootstrap for Conditional Heteroscedastic Time Series Regressions
+# [B]. Bootstrap for Conditional Heteroscedastic Time Series Regressions
 
 ## Example 2
 
@@ -267,9 +267,9 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 - Paparoditis, E., & Politis, D. N. (2009). Resampling and subsampling for financial time series. In Handbook of financial time series (pp. 983-999). Springer, Berlin, Heidelberg.
 
 
-# III. Stochastic Processes Simulation Examples
+# [C]. Stochastic Processes Simulation Examples
 
-## [A.] Classical Brownian Bridge limiting processes
+## [I]. Classical Brownian Bridge limiting processes
 
 We begin by considering as an example, the simulation procedure to obtain critical values from a normalized Brownian Bridge which consists of functionals of Brownian motions. 
 
@@ -285,7 +285,7 @@ We begin by considering as an example, the simulation procedure to obtain critic
 
 </p>  
 
-## [B.] Nonlinear Stochastic Processes (Advanced Topics)
+## [II]. Nonlinear Stochastic Processes (Advanced Topics)
 
 
 Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic process given by the following expression 
