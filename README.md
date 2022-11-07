@@ -112,6 +112,10 @@ hist(bootvals)
 
 ```
 
+## Remarks:
+
+1. Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic panel data models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable).   
+
 
 
 ## Assignment 1  
