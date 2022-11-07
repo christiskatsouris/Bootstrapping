@@ -68,6 +68,25 @@ my.bootstrap <- function(x, nboot, theta, ...)
   return( answer )
 }
 
+# loads data
+data(faithful) 
+
+# Extract the data from R
+observed <- as.matrix( faithful$waiting )
+
+
+hist(observed,prob=T,breaks=15) # Look at it
+bootvals <- my.bootstrap( observed, 1000, mean ) # 1000 bootstrap replicates of the mean
+
+# Histogram of the bootstrap replicates
+hist(bootvals,prob=T) 
+
+# Add the sample mean
+abline(v = mean(observed),lwd=3) 
+
+# Add estimate of bootstrap density
+lines(density(bootvals,kernel="gaussian")) 
+
 ```
 
 ## Assignment 1  
