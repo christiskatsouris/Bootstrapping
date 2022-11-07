@@ -207,9 +207,11 @@ Consider the Cox-Ingersoll-Ross (CIR) process  which is a nonlinear stochastic p
  
 # Reading List
 
-$\textbf{[1]}$ Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
+$\textbf{[1]}$ Davidson, R., & MacKinnon, J. G. (1993). Estimation and inference in econometrics (Vol. 63). New York: Oxford.
 
-$\textbf{[2]}$ Godfrey, L. (2009). Bootstrap tests for regression models. Springer.
+$\textbf{[2]}$ Efron, B., & Tibshirani, R. J. (1993). An introduction to the bootstrap. Chapman and Hall, New York.
+
+$\textbf{[3]}$ Godfrey, L. (2009). Bootstrap tests for regression models. Springer.
 
 
 # Disclaimer
