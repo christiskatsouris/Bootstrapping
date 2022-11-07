@@ -114,9 +114,49 @@ hist(bootvals)
 
 ## Remarks:
 
-Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic panel data models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable). A framework for estimation and testing in dynamic panel models with nonlinearities is proposed by Hansen, B. E. (1999).   
+Notice that under the presence of nuisance parameters in regression models then resampling methods such as the bootstrap can be employed for estimation and inference purposes (such as in the case of threshold cointegration model e.g., either within a multivariate setting or in dynamic or non-dynamic panel data regression models). Although the mechanism for obtaining bootstrap random sequences remains the same as in the case of the standard bootstrap distribution approach, in regression models we also need to obtain the corresponding bootstrapped model estimates in order to obtain asymptotic approximations for nuisance parameters (e.g., such as the unknown threshold variable). A framework for estimation and testing in dynamic panel models with nonlinearities is proposed by Hansen, B. E. (1999).   
 
+```R
 
+# Threshold Regression Model Estimation Step for Non-Dynamic Panel Data (see,  Hansen, B. E. (1999))
+
+# function to obtain an estimate for the SSE measure
+sse_calc <- function(y,x)
+{
+   e  <- y-x%*%qr.solve(x,y)
+  out <- t(e)%*%e 
+  return(out)
+} 
+
+thr_sse <- function(y,q,r)
+{
+        nq <- nrow(q)
+        sse <- matrix(c(0),nq,1)
+        for (qi in 1:nq)
+         {
+            if (r[1]==0)
+            {
+               rr <- q[qi] 
+            }
+            else 
+            { rr <- rbind(r,q[qi])
+            }
+            rr <- as.matrix(sort(rr))
+            xx <- cbind(xt,ct)
+            
+            for (j in 1:nrow(rr))
+            {
+                d <- (thresh < rr[j])
+                xx <- cbind(xx,tr(cf*d))
+            }
+            sse[qi] <- sse_calc(y,xx)
+        }
+        sse
+}
+
+# Code Reference: Hansen, B. E. (1999). "Threshold effects in non-dynamic panels: Estimation, testing, and inference".
+
+```
 
 ## Assignment 1  
 
