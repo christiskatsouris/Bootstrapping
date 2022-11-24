@@ -282,9 +282,19 @@ Consider the following coding procedure in R which checks for the block-length f
 
 set.seed(1234)
 
-
-
-
+# Check block-length of subsamples
+  if (is.null(sub_sample)) 
+  {
+    m <- round(n^(1 / 5) * n^(1 / k))
+  } 
+  else if (sub_sample >= n) 
+  {
+    stop("sub_sample must be less than series length")
+  } 
+  else
+  {
+    m <- round(sub_sample)
+  }
 
 ```
 
