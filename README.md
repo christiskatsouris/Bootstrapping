@@ -162,7 +162,7 @@ thr_sse <- function(y,q,r)
         sse
 }
 
-# Code Reference: Hansen, B. E. (1999). "Threshold effects in non-dynamic panels: Estimation, testing, and inference".
+# Reference: Hansen, B. E. (1999). "Threshold effects in non-dynamic panels: Estimation, testing, and inference".
 
 ```
 
