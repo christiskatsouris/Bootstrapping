@@ -298,6 +298,20 @@ set.seed(1234)
 
 ```
 
+Then, we can call the function 'tsbootstrap' in order to implement the block-bootstrap resampling method. 
+
+```R
+# Bootstrap variance of whole series
+    boot_temp <- tseries::tsbootstrap(series,
+      statistic = stats::var,
+      type = "block",
+      nb = nb,
+      b = l_star,
+      m = bofb
+    )
+
+```
+
 # [D]. Stochastic Processes Simulation Examples
 
 ## [I]. Classical Brownian Bridge limiting processes
