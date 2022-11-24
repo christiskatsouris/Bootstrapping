@@ -302,14 +302,28 @@ Then, we can call the function 'tsbootstrap' in order to implement the block-boo
 
 ```R
 # Bootstrap variance of whole series
-    boot_temp <- tseries::tsbootstrap(series,
-      statistic = stats::var,
-      type = "block",
-      nb = nb,
-      b = l_star,
-      m = bofb
-    )
 
+boot_temp <- tseries::tsbootstrap(series,
+                                  statistic = stats::var,
+                                  type = "block",
+                                    nb = nb,
+                                     b = l_star,
+                                     m = bofb )
+                                     
+>  boot_temp
+
+Call:
+tseries::tsbootstrap(x = series, nb = nb, statistic = stats::var, 
+    m = bofb, b = l_star, type = "block")
+
+Resampled Statistic(s):
+  original       bias std. error 
+   1.28219   -0.01976    0.13802 
+
+# Save updated variance of whole series
+v_star <- mean(boot_temp$statistic)
+    
+    
 ```
 
 # [D]. Stochastic Processes Simulation Examples
