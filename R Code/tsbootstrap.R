@@ -1,10 +1,10 @@
-// R function 
+#  R function adapted from R package boot
   
   
 tsbootstrap <- function(data, ...) 
 {# begin-of-function
   UseMethod("tsbootstrap")
-}
+}# end-of-function
 
 TSBOOT_TYPES <- c("fixed", "geom")
 
