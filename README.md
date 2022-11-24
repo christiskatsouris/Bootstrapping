@@ -270,8 +270,25 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
 - Corradi, V., & Iglesias, E. M. (2008). Bootstrap refinements for QML estimators of the GARCH (1, 1) parameters. Journal of Econometrics, 144(2), 500-510.
 - Paparoditis, E., & Politis, D. N. (2009). Resampling and subsampling for financial time series. In Handbook of financial time series (pp. 983-999). Springer, Berlin, Heidelberg.
 
+# [C]. Block Bootstrap Techniques
 
-# [C]. Stochastic Processes Simulation Examples
+In this section, we demonstrate some useful examples related to Block Bootstrap techniques. 
+
+## Example 3
+
+Consider the following coding procedure in R which checks for the block-length for the implementation of the block bootstrap resampling approach. 
+
+```R
+
+set.seed(1234)
+
+
+
+
+
+```
+
+# [D]. Stochastic Processes Simulation Examples
 
 ## [I]. Classical Brownian Bridge limiting processes
 
