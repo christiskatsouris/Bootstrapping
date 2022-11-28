@@ -116,7 +116,7 @@ hist(bootvals)
 
 ## Example 5
 
-Consider the implementation of the following Residual and Wild Bootstrap Resampling Techniques.
+Consider the implementation of the following Residual and Wild Bootstrap Resampling Techniques using the R package ['Imboot'](https://github.com/meganheyman/lmboot).
 
 ```R
 
