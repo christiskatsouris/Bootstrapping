@@ -1,17 +1,19 @@
-#################################################################################################
+###########################################################################
+# Function borrowed from the R package 'rsample'                      
+# 
 # ANOVA.boot.R
 #
-# A function for performing bootstrapping for ANOVA testing
+# The function aims to perform bootstrapping for ANOVA testing
 #
 # Reference: https://github.com/meganheyman/lmboot/blob/master/ANOVA.boot.R
-#################################################################################################
+###########################################################################
 
 ANOVA.boot <-
 function(formula, B=1000, type="residual", wild.dist="normal",  
                        seed=NULL, data = NULL, keep.boot.resp=FALSE){
 
   ############################################
-  ##Check for function inputs               ##
+  ## Check for function inputs              ##
   ############################################
 
   if(inherits(formula, "formula")==FALSE){
@@ -96,6 +98,7 @@ function(formula, B=1000, type="residual", wild.dist="normal",
   ## ANOVA Model Fit                              ##
   ##################################################
   ### SOME OF THESE VARIABLES MAY NOT BE NEEDED???
+    
   anovaMod <- aov(formula, data = data)               #ANOVA model (original data)
   SS.list <- summary(anovaMod)[[1]][,2]               #ANOVA sum of squares (original data)
   df.list <- summary(anovaMod)[[1]][,1]               #ANOVA degrees of freedom (original data)
@@ -114,9 +117,6 @@ function(formula, B=1000, type="residual", wild.dist="normal",
     count <- count + df.list[i]
     modelMat.list[[i+1]] <- modelMat[, model.pivot[1:count]]
   }
-
-
-
 
 
   ##################################################
@@ -195,17 +195,17 @@ function(formula, B=1000, type="residual", wild.dist="normal",
       }
       bootFStats[j, i]<- Ftest
     }
- 
-
     
   }
   
+    
   pvalues <- rep(NA, df.len-1)
   for (i in 1:(df.len-1)) {
     pvalues[i] <- mean(bootFStats[,i] > obsFStats[i])
   }
   
 ##Potentially need to re-name or re-format output here
+    
   if (keep.boot.resp == TRUE) {
     structure(invisible(list(terms = termNames,df = df.list, bootFStats=bootFStats, 
                              origSSE=SS.list[length(SS.list)], origSSTr=SS.list[1:(length(SS.list)-1)],
