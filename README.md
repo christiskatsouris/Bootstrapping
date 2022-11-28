@@ -302,7 +302,6 @@ Then, we can call the function 'tsbootstrap' in order to implement the block-boo
 
 ```R
 # Bootstrap variance of whole series
-
 boot_temp <- tseries::tsbootstrap(series,
                                   statistic = stats::var,
                                   type = "block",
@@ -322,8 +321,41 @@ Resampled Statistic(s):
 
 # Save updated variance of whole series
 v_star <- mean(boot_temp$statistic)
-    
-    
+        
+```
+
+## Example 4
+
+Consider the implementation of the following Redidual and Wild Bootstrap Resampling Techniques.
+
+```R
+
+install.packages("evd")
+install.packages("boot")
+install.packages("resample")
+
+library(evd)
+library(boot)
+library(resample)
+
+Seed <- 14
+set.seed(Seed)
+
+n    <- 100
+y    <- rnorm(n) #randomly generated response
+x    <- rnorm(n) #randomly generated predictor
+
+formula  <- y~x
+
+ResidObj <- residual.boot(y~x, B=100, seed=Seed) # perform the residual bootstrap
+WildObj  <- wild.boot( y~x, B=100, seed=Seed)    # perform the wild bootstrap
+
+# residual bootstrap 95% CI for slope parameter (percentile method)
+quantile(ResidObj$bootEstParam[,2], probs=c(.025, .975))
+
+# bootstrap 95% CI for slope parameter (percentile method)
+quantile(WildObj$bootEstParam[,2], probs=c(.025, .975))
+
 ```
 
 # [D]. Stochastic Processes Simulation Examples
