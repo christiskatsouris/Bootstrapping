@@ -350,7 +350,17 @@ Resampled Statistic(s):
    1.28219   -0.01976    0.13802 
 
 # Save updated variance of whole series
-v_star <- mean(boot_temp$statistic)        
+v_star <- mean(boot_temp$statistic)    
+
+# Optimize MSE function over l in parallel
+      sol <- parallel::parSapply(cl = cl, X = grid[[1]], FUN = hhjMSE,
+        # Bootstrap parameters for hhjMSE
+        n = n,
+        m = m,
+        series.list = series.list,
+        nb = nb,
+        bofb = bofb,
+        v_star = v_star)
 ```
 
 # [D]. Stochastic Processes Simulation Examples
