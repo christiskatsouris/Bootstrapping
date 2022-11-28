@@ -197,7 +197,6 @@ thr_sse <- function(y,q,r)
 }
 
 # Reference: Hansen, B. E. (1999). "Threshold effects in non-dynamic panels: Estimation, testing, and inference".
-
 ```
 
 ## References
@@ -216,7 +215,6 @@ thr_sse <- function(y,q,r)
 Simulate a data generating process that corresponds to a stationary GARCH model using the code below:
 
 ```R
-
 install.packages("fGarch")
 library("fGarch")
 
@@ -245,7 +243,6 @@ est.par   <- est.garch@fit$par[1:3]
 innov     <- series[1:n]/est.garch@sigma.t
 
 ts.plot(innov)
-
 ```
 
 ## Assignment 2  
@@ -294,7 +291,6 @@ bootstrap.step <- function( innov = innov, B = B, n = n, n.s = n.s, est.par = es
   return(t.stat)
   
 }#End of function
-
 ```
 
 ## References
@@ -354,8 +350,7 @@ Resampled Statistic(s):
    1.28219   -0.01976    0.13802 
 
 # Save updated variance of whole series
-v_star <- mean(boot_temp$statistic)
-        
+v_star <- mean(boot_temp$statistic)        
 ```
 
 # [D]. Stochastic Processes Simulation Examples
